@@ -24,7 +24,7 @@ router.get("/my-orders", isAuth, getMyOrdersCotroller);
 router.get("/my-orders/:id", isAuth, singleOrderDetrailsController);
 
 // acceipt payments
-router.post("/payments", isAuth, paymetsController);
+router.post("/payments", paymetsController);
 
 /// ======== ADMIN PART ============
 // get all order
